@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Owl Cult Club | Contact</title>
+    <link rel="icon" type="image/ico" href="../img/otros/logo.ico">
     <!-- Link de estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Link de AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -49,8 +52,8 @@
     </header>
 
     <main class="contact-main">
-      <h1>Contact us</h1>
-      <section class="manager">
+      <h1 data-aos="fade-down" data-aos-duration="1200">Contact us</h1>
+      <section class="manager" data-aos="fade-up" data-aos-duration="1600">
           <h2>Producer</h2>
           <h3>Maximo Cozzetti</h3>
           <h2>Mail</h2>
@@ -58,7 +61,7 @@
           <h2>Phone</h2>
           <h3>11 2233 4455</h3>
       </section>
-      <section class="formulario">
+      <section class="formulario" data-aos="fade-up" data-aos-duration="1600">
           <form action="form.php" method="POST">
               <ul>
                 <h3>Leave us a coment</h3>
@@ -90,7 +93,7 @@
               </ul>
           </form>
       </section>
-      <section class="map">
+      <section class="map" data-aos="fade-up" data-aos-duration="1600">
           <h2>The Studio</h2>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6172142825003!2d-58.54164722445665!3d-34.639112372941554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc813b947f283%3A0x4c6a61ca81aa0978!2sChacabuco%2061%2C%20B1702FJA%20Ciudadela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1713981054463!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
@@ -106,6 +109,12 @@
   </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 
 </html>

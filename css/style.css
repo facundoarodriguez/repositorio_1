@@ -68,6 +68,9 @@ main .info #members {
   border-radius: 5px;
   scroll-margin-top: 10ex;
 }
+main .info #members img {
+  border-radius: 10px;
+}
 main .info #members p {
   padding-right: 2rem;
 }
@@ -79,6 +82,9 @@ main .info #homestudio {
   border-radius: 5px;
   scroll-margin-top: 10ex;
 }
+main .info #homestudio img {
+  border-radius: 10px;
+}
 main .info #homestudio p, main .info #homestudio h2 {
   padding-left: 2rem;
 }
@@ -88,6 +94,9 @@ main .info #clases {
   background-color: #2c2c2c;
   border-radius: 5px;
   scroll-margin-top: 10ex;
+}
+main .info #clases img {
+  border-radius: 10px;
 }
 main .info #clases p {
   padding-right: 2rem;
