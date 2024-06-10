@@ -10,38 +10,34 @@ main section .video-prom {
   height: 400px;
   border-radius: 5px;
 }
-@media only screen and (max-width: 600px) {
-  main section .video-prom .video-prom {
-    width: 400px;
-  }
-}
-main section .video-prom div:first-child video {
+main section div:first-child video {
   height: 368px;
   margin: 1rem;
 }
-main section .video-prom div:last-child {
+main section div:last-child {
   width: 100%;
   text-align: center;
   margin-top: 7rem;
 }
-main section .video-prom div:last-child p {
+main section div:last-child p {
   margin-top: 2rem;
   margin-left: 5rem;
   margin-right: 5rem;
 }
-main .reference {
+
+.reference {
   margin-top: 20rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-main .reference a {
+.reference a {
   text-decoration: none;
 }
-main .reference a img {
+.reference a img {
   transition: 0.5s;
 }
-main .reference a h6 {
+.reference a h6 {
   font-size: 2rem;
   color: #FFFFFF;
   position: relative;
@@ -51,16 +47,17 @@ main .reference a h6 {
   display: none;
   width: max-content;
 }
-main .reference a:hover h6 {
+.reference a:hover h6 {
   display: block;
 }
-main .reference a:hover img {
+.reference a:hover img {
   filter: brightness(30%);
 }
-main .info {
+
+.info {
   margin: 30rem 2rem 10rem 2rem;
 }
-main .info #members {
+.info #members {
   display: flex;
   margin-bottom: 20rem;
   padding: 3rem;
@@ -68,13 +65,13 @@ main .info #members {
   border-radius: 5px;
   scroll-margin-top: 10ex;
 }
-main .info #members img {
+.info #members img {
   border-radius: 10px;
 }
-main .info #members p {
+.info #members p {
   padding-right: 2rem;
 }
-main .info #homestudio {
+.info #homestudio {
   display: flex;
   margin-bottom: 20rem;
   padding: 3rem;
@@ -82,32 +79,32 @@ main .info #homestudio {
   border-radius: 5px;
   scroll-margin-top: 10ex;
 }
-main .info #homestudio img {
+.info #homestudio img {
   border-radius: 10px;
 }
-main .info #homestudio p, main .info #homestudio h2 {
+.info #homestudio p, .info #homestudio h2 {
   padding-left: 2rem;
 }
-main .info #clases {
+.info #clases {
   display: flex;
   padding: 3rem;
   background-color: #2c2c2c;
   border-radius: 5px;
   scroll-margin-top: 10ex;
 }
-main .info #clases img {
+.info #clases img {
   border-radius: 10px;
 }
-main .info #clases p {
+.info #clases p {
   padding-right: 2rem;
 }
-main .info #clases a {
+.info #clases a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #7b7b7b;
   transition: 0.3s;
 }
-main .info #clases a:hover {
+.info #clases a:hover {
   color: #FFFFFF;
 }
 
@@ -160,6 +157,11 @@ main .info #clases a:hover {
   transform: translate(-50%, 0);
 }
 
+@media only screen and (max-width: 412px) {
+  .map iframe {
+    width: 300px;
+  }
+}
 .contact-main {
   text-align: center;
 }
