@@ -3,15 +3,6 @@
     padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
-    .btn {
-        visibility: visible;
-    }
-    .links-del-nav {
-        display: none;
-    }
-}
-
 ::-webkit-scrollbar {
     width: 25px;
 }
@@ -166,5 +157,19 @@ footer {
                 }
             }
         }    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .btn {
+        visibility: visible;
+    }
+    .links-del-nav {
+        display: none;
+    }
+    footer {
+        p {
+            display: none;
+        }
     }
 }

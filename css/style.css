@@ -9,11 +9,6 @@ main section .video-prom {
   height: 400px;
   border-radius: 5px;
 }
-@media only screen and (max-width: 600px) {
-  main section .video-prom .video-prom {
-    width: 400px;
-  }
-}
 main section .video-prom div:first-child video {
   height: 368px;
   margin: 1rem;
@@ -110,6 +105,90 @@ main .info #clases a:hover {
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 600px) {
+  section .video-prom {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2c2c2c;
+    width: 100%;
+    border-radius: 5px;
+  }
+  section .video-prom div:first-child video {
+    width: 93%;
+  }
+  section .video-prom div:last-child {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  section .video-prom div:last-child p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .info {
+    margin: 30rem 2rem 10rem 2rem;
+  }
+  .info #members {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20rem;
+    padding: 3rem;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    scroll-margin-top: 10ex;
+  }
+  .info #members img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .info #members p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .info #homestudio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20rem;
+    padding: 3rem;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    scroll-margin-top: 10ex;
+  }
+  .info #homestudio img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .info #homestudio p, .info #homestudio h2 {
+    margin-top: 2rem;
+  }
+  .info #clases {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    scroll-margin-top: 10ex;
+  }
+  .info #clases img {
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .info #clases p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .info #clases a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #7b7b7b;
+    transition: 0.3s;
+  }
+  .info #clases a:hover {
+    color: #FFFFFF;
+  }
+}
 .music .disc1, .music .disc2, .music .disc3 {
   display: flex;
   flex-wrap: wrap;
@@ -119,8 +198,8 @@ main .info #clases a:hover {
   border-radius: 5px;
 }
 .music .disc1 div:first-child img, .music .disc2 div:first-child img, .music .disc3 div:first-child img {
-  width: 450px;
   height: 450px;
+  width: 450px;
   border-radius: 10px;
 }
 .music .disc1 div:last-child, .music .disc2 div:last-child, .music .disc3 div:last-child {
@@ -148,6 +227,16 @@ main .info #clases a:hover {
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 600px) {
+  .music .disc1 div:first-child img, .music .disc2 div:first-child img, .music .disc3 div:first-child img {
+    width: 100%;
+    height: 100%;
+  }
+  .music .disc1 div:last-child a, .music .disc2 div:last-child a, .music .disc3 div:last-child a {
+    position: relative;
+    top: 1rem;
+  }
+}
 #carouselExample {
   padding: 2rem 5rem;
   margin-bottom: 5rem;
@@ -179,6 +268,11 @@ main .info #clases a:hover {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .map iframe {
+    width: 90%;
+  }
+}
 #products-section {
   display: flex;
   flex-wrap: wrap;
@@ -216,14 +310,6 @@ main .info #clases a:hover {
   padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .btn {
-    visibility: visible;
-  }
-  .links-del-nav {
-    display: none;
-  }
-}
 ::-webkit-scrollbar {
   width: 25px;
 }
@@ -344,6 +430,18 @@ footer ul li:nth-child(1) a {
 footer ul li:nth-child(1) a img {
   width: 1rem;
   filter: invert(100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    visibility: visible;
+  }
+  .links-del-nav {
+    display: none;
+  }
+  footer p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
